@@ -1,1 +1,1 @@
-FROM milesmcc/shynet:latest
+FROM questdb/questdb:latest
