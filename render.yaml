@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: shynet
+    env: docker
+    envVars:
+      - key: DB_NAME
+        fromDatabase:
+          name: shynet
+          property: database
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: shynet
+          property: password
+      - key: DB_USER
+        fromDatabase:
+          name: shynet
+          property: user
+      - key: DB_HOST
+        fromDatabase:
+          name: shynet
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: shynet
+          property: port
+
+databases:
+  - name: shynet
+    databaseName: shynet
+    user: shynet

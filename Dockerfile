@@ -1,0 +1,1 @@
+FROM milesmcc/shynet:latest
