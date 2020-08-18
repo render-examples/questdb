@@ -2,3 +2,7 @@ services:
   - type: web
     name: questdb
     env: docker
+    disk:
+      name: questdb
+      mountPath: /root/.questdb/db
+      sizeGB: 20
