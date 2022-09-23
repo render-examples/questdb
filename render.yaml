@@ -2,6 +2,7 @@ services:
   - type: web
     name: questdb
     env: docker
+    autoDeploy: false
     disk:
       name: questdb
       mountPath: /root/.questdb/db
